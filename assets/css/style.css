@@ -1,0 +1,1566 @@
+/* ===================================================
+   CHIC GROOMERS SALON
+   Luxury Theme
+=================================================== */
+
+/* ===========================
+   ROOT VARIABLES
+=========================== */
+
+:root{
+
+    --charcoal:#1E1E1E;
+    --card:#2C2C2C;
+    --gold:#D4AF37;
+    --gold-hover:#E5C158;
+    --ivory:#F8F6F2;
+    --grey:#BEBEBE;
+    --border:rgba(212,175,55,.25);
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:var(--ivory);
+
+}
+
+/* ===========================
+   REGISTER PAGE
+=========================== */
+
+.auth-page{
+
+    background:
+        linear-gradient(
+            rgba(15,15,15,.72),
+            rgba(15,15,15,.72)
+        ),
+        url("../images/register-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:'Playfair Display',serif;
+
+}
+
+/* ===========================
+   AUTH CARD
+=========================== */
+
+.auth-card{
+
+    background:rgba(35,35,35,.72);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    animation:fadeUp .7s ease;
+
+    transition:all .35s ease;
+
+}
+
+.auth-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.55);
+
+}
+
+/* ===========================
+   CARD HEADER
+=========================== */
+
+.card-header{
+
+    background:transparent;
+
+    border:none;
+
+    text-align:center;
+
+    padding:30px 30px 15px;
+
+}
+
+/* ===========================
+   LOGO ICON
+=========================== */
+
+.salon-icon{
+
+    font-size:3.5rem;
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   HEADER TEXT
+=========================== */
+
+.card-header h2{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.card-header p{
+
+    color:var(--ivory);
+
+    font-size:1.1rem;
+
+    margin-bottom:5px;
+
+}
+
+.card-header small{
+
+    color:var(--grey);
+
+    line-height:1.6;
+
+    display:block;
+
+}
+
+/* ===========================
+   CARD BODY
+=========================== */
+
+.card-body{
+
+    padding:35px;
+
+}
+
+/* ===========================
+   FORM LABELS
+=========================== */
+
+.form-label{
+
+    color:var(--ivory);
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================
+   FORM INPUTS
+=========================== */
+
+.form-control{
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--ivory);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:12px;
+
+    padding:13px;
+
+    transition:all .3s ease;
+
+}
+
+.form-control::placeholder{
+
+    color:#B5B5B5;
+
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.10);
+
+    color:var(--ivory);
+
+    border-color:var(--gold);
+
+    box-shadow:0 0 12px rgba(212,175,55,.35);
+
+}
+
+.form-control:focus::placeholder{
+
+    color:#D5D5D5;
+
+}
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+
+    background:linear-gradient(135deg,#D4AF37,#F1D27A);
+
+    color:#1E1E1E;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 20px rgba(212,175,55,.25);
+
+}
+
+.btn-primary:hover{
+
+    background:linear-gradient(135deg,#E5C76B,#D4AF37);
+
+    color:#1E1E1E;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 30px rgba(212,175,55,.35);
+
+}
+
+.btn-primary:focus{
+
+    box-shadow:0 0 0 .25rem rgba(212,175,55,.25);
+
+}
+
+.btn-primary:disabled{
+
+    background:#6B6B6B;
+
+    color:#D5D5D5;
+
+    opacity:.75;
+
+    box-shadow:none;
+
+}
+
+/* ===========================
+   BUTTON SHIMMER
+=========================== */
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.btn-primary:hover::before{
+
+    left:130%;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+a:hover{
+
+    color:var(--gold-hover);
+
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+hr{
+
+    border-color:rgba(255,255,255,.10);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.auth-footer{
+
+    text-align:center;
+
+    color:var(--grey);
+
+    font-size:.9rem;
+
+    margin-top:25px;
+
+}
+
+.auth-footer a{
+
+    color:var(--gold);
+
+    font-weight:500;
+
+}
+
+/* ===========================
+   TEXT SELECTION
+=========================== */
+
+::selection{
+
+    background:var(--gold);
+
+    color:var(--charcoal);
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1A1A1A;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold-hover);
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+    .auth-card{
+
+        margin:30px 15px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card-header{
+
+        padding:25px 20px 15px;
+
+    }
+
+    .card-body{
+
+        padding:25px;
+
+    }
+
+    .salon-icon{
+
+        font-size:3rem;
+
+    }
+
+    .card-header h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .card-body{
+
+        padding:20px;
+
+    }
+
+    .btn-primary{
+
+        padding:12px;
+
+    }
+
+}
+
+/* ===========================
+   CHECKBOX
+=========================== */
+
+.form-check-label{
+
+    color:var(--ivory);
+
+}
+
+.form-check-input{
+
+    background-color:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.20);
+
+}
+
+.form-check-input:checked{
+
+    background-color:var(--gold);
+
+    border-color:var(--gold);
+
+}
+
+.form-check-input:focus{
+
+    box-shadow:0 0 10px rgba(212,175,55,.35);
+
+}
+
+/* ===========================
+   ALERTS
+=========================== */
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.alert-success{
+
+    background:rgba(25,135,84,.20);
+
+    color:#B7FFD2;
+
+    border-left:4px solid #198754;
+
+}
+
+.alert-danger{
+
+    background:rgba(220,53,69,.20);
+
+    color:#FFD1D6;
+
+    border-left:4px solid #DC3545;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    background:#1E1E1E;
+
+    border-bottom:1px solid rgba(212,175,55,.15);
+
+}
+
+.navbar-brand{
+
+    color:var(--gold) !important;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+.navbar-brand i{
+
+    margin-right:8px;
+
+}
+
+.nav-link{
+
+    color:var(--ivory) !important;
+
+    transition:.3s ease;
+
+}
+
+.nav-link:hover{
+
+    color:var(--gold) !important;
+
+}
+
+.nav-link.active{
+
+    color:var(--gold) !important;
+
+    font-weight:600;
+
+}
+
+.dropdown-menu{
+
+    background:#2C2C2C;
+
+    border:1px solid rgba(212,175,55,.15);
+
+}
+
+.dropdown-item{
+
+    color:var(--ivory);
+
+}
+
+.dropdown-item:hover{
+
+    background:rgba(212,175,55,.10);
+
+    color:var(--gold);
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:#1E1E1E;
+
+    border-top:1px solid rgba(212,175,55,.15);
+
+    color:var(--ivory);
+
+    padding:20px 0;
+
+    margin-top:60px;
+
+}
+
+.footer p{
+
+    margin:0;
+
+    color:var(--ivory);
+
+}
+
+.footer small{
+
+    color:var(--grey);
+
+}
+
+.footer a{
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    color:var(--gold-hover);
+
+}
+
+/* ==========================================
+   CUSTOMER DASHBOARD
+========================================== */
+
+.hero-section{
+
+    background:rgba(30, 30, 30, .60);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    margin-bottom:40px;
+
+}
+
+.hero-section h1{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+    font-size:2.4rem;
+
+    margin-bottom:15px;
+
+}
+
+.hero-section p{
+
+    color:var(--grey);
+
+    font-size:1.15rem;
+
+    margin:0;
+
+}
+
+
+/* =======================
+   Dashboard Cards
+======================= */
+
+.dashboard-card{
+
+    background:rgba(30, 30, 30, .60);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:all .35s ease;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+    box-shadow:0 15px 35px rgba(212,175,55,.15);
+
+}
+
+
+/* =======================
+   Hero Card
+======================= */
+
+.book-card{
+
+    min-height:420px;
+
+    border:2px solid var(--gold);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* Decorative gold glow */
+
+.book-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    right:-80px;
+
+    width:220px;
+
+    height:220px;
+
+    background:radial-gradient(circle,
+    rgba(212,175,55,.18),
+    transparent 70%);
+
+    pointer-events:none;
+
+}
+
+
+.book-card .dashboard-icon{
+
+    font-size:4rem;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+}
+
+
+.book-card h2{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.book-card p{
+
+    color:var(--grey);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    max-width:80%;
+
+}
+
+
+.book-card .btn{
+
+    width:fit-content;
+
+    margin-top:15px;
+
+    padding:14px 32px;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    background:var(--gold);
+
+    color:#1E1E1E;
+
+    border:none;
+
+    transition:.3s ease;
+
+}
+
+
+.book-card .btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#E5C76B;
+
+}
+
+
+/* =======================
+   Small Cards
+======================= */
+
+.small-card{
+
+    min-height:195px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.small-card .dashboard-icon{
+
+    font-size:2.5rem;
+
+    margin-bottom:15px;
+
+}
+
+
+.small-card h4{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:10px;
+
+}
+
+
+.small-card p{
+
+    color:var(--grey);
+
+    margin-bottom:0;
+
+}
+
+
+/* =======================
+   Previous Services
+======================= */
+
+.dashboard-card h3{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+}
+
+
+.dashboard-card small{
+
+    color:var(--grey);
+
+}
+
+
+/* =======================
+   Responsive
+======================= */
+
+@media (max-width:992px){
+
+    .book-card{
+
+        min-height:320px;
+
+    }
+
+    .book-card p{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* ==========================================
+   DASHBOARD BACKGROUND
+========================================== */
+
+.dashboard-page{
+
+    background:
+        linear-gradient(
+            rgba(20,20,20,.82),
+            rgba(20,20,20,.82)
+        ),
+        url("../images/dashboard-bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   BOOK APPOINTMENTS
+========================================== */
+
+/* Hero */
+
+.booking-hero{
+
+    margin-bottom:50px;
+
+}
+
+
+/* Search */
+
+.search-section{
+
+    margin-bottom:50px;
+
+}
+
+.search-section .input-group{
+
+    background:rgba(30,30,30,.65);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(18px);
+
+}
+
+.search-section .input-group-text{
+
+    background:transparent;
+
+    border:none;
+
+    color:var(--gold);
+
+    padding:16px 20px;
+
+}
+
+.search-section .form-control{
+
+    background:transparent;
+
+    border:none;
+
+    color:var(--ivory);
+
+    padding:16px;
+
+    box-shadow:none;
+
+}
+
+.search-section .form-control::placeholder{
+
+    color:#B8B8B8;
+
+}
+
+
+/* ==========================================
+   SERVICE CARDS
+========================================== */
+
+.service-card{
+
+    position:relative;
+
+    background:rgba(30,30,30,.70);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+    box-shadow:0 18px 35px rgba(212,175,55,.20);
+
+}
+
+
+/* Image */
+
+.service-image{
+
+    height:260px;
+
+    overflow:hidden;
+
+}
+
+.service-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    transition:transform .5s ease;
+
+    display:block;
+
+}
+
+.service-card:hover .service-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* Card Body */
+
+.service-content{
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex-grow:1;
+
+}
+
+.service-content h3{
+
+    font-family:'Playfair Display', serif;
+
+    color:var(--ivory);
+
+    font-size:1.5rem;
+
+    margin-bottom:12px;
+
+}
+
+.service-content p{
+
+    color:var(--grey);
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+    flex-grow:1;
+
+}
+
+
+/* Duration & Price */
+
+.service-meta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:auto;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    font-size:.95rem;
+
+}
+
+.service-meta i{
+
+    margin-right:6px;
+
+}
+
+
+/* Selected Badge */
+
+.selected-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:var(--gold);
+
+    color:#1E1E1E;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    display:none;
+
+    z-index:20;
+
+}
+
+
+/* Active Card */
+
+.service-card.active{
+
+    border:2px solid var(--gold);
+
+    box-shadow:0 20px 40px rgba(212,175,55,.25);
+
+}
+
+.service-card.active .selected-badge{
+
+    display:block;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .service-image{
+
+        height:220px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .service-image{
+
+        height:200px;
+
+    }
+
+}
+
+/* ==========================================
+   ADMIN DASHBOARD
+========================================== */
+
+/* Management Cards */
+
+.management-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:340px;
+
+    padding:40px 35px;
+
+}
+
+.management-icon{
+
+    font-size:4rem;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+    transition:.35s ease;
+
+}
+
+.management-card:hover .management-icon{
+
+    transform:scale(1.1) rotate(-5deg);
+
+}
+
+.management-card h3{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:15px;
+
+}
+
+.management-card p{
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    flex-grow:1;
+
+}
+
+/* Make all buttons align nicely */
+
+.management-card .btn{
+
+    margin-top:auto;
+
+    min-width:220px;
+
+}
+
+
+/* Reports Card */
+
+.reports-card{
+
+    min-height:260px;
+
+}
+
+
+/* ==========================================
+   SUMMARY SECTION
+========================================== */
+
+.summary-heading{
+
+    color:var(--ivory);
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:25px;
+
+}
+
+.summary-card{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.summary-card h4{
+
+    color:var(--grey);
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.summary-number{
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--gold);
+
+    font-family:'Playfair Display', serif;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .management-card{
+
+        min-height:300px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .management-card{
+
+        min-height:auto;
+
+        padding:35px 25px;
+
+    }
+
+    .management-icon{
+
+        font-size:3rem;
+
+    }
+
+    .management-card .btn{
+
+        width:100%;
+
+        min-width:unset;
+
+    }
+
+}
+
+/* ==========================================
+   CLICKABLE IMAGE UPLOAD
+========================================== */
+
+.image-upload-container{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.upload-box{
+
+    position:relative;
+
+    width:320px;
+
+    height:240px;
+
+    border:2px dashed rgba(212,175,55,.4);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.upload-box:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--gold);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.service-preview{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.upload-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(20,20,20,.55);
+
+    color:var(--ivory);
+
+    transition:.3s ease;
+
+}
+
+.upload-box:hover .upload-overlay{
+
+    background:rgba(20,20,20,.35);
+
+}
+
+.upload-overlay i{
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+.upload-overlay h5{
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:8px;
+
+}
+
+.upload-overlay p{
+
+    margin:0;
+
+    color:var(--grey);
+
+    font-size:.95rem;
+
+}
